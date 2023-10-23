@@ -1,0 +1,120 @@
+{
+  "React Component with Props": {
+    "prefix": "#component:with-props",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "export const ${1:ComponentName}: React.FC<${2:ComponentPropsType}> = ({${3:props1}}) => {",
+      "",
+      "",
+      "    return (",
+      "        <React.Fragment>",
+      "            $4",
+      "        </React.Fragment>",
+      "    );",
+      "};"
+    ],
+    "description": "Create a React Functional Component With Props",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "React Component without Props": {
+    "prefix": "#component:without-props",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "export const ${1:ComponentName}: React.FC = () => {",
+      "",
+      "",
+      "    return (",
+      "        <React.Fragment>",
+      "            $2",
+      "        </React.Fragment>",
+      "    );",
+      "};"
+    ],
+    "description": "Create a React Functional Component Without Props",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "React Memoized Component without Props": {
+    "prefix": "#component:memo:without-props",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "export const ${1:ComponentName}: React.FC = React.memo(() => {",
+      "",
+      "",
+      "    return (",
+      "        <React.Fragment>",
+      "            $2",
+      "        </React.Fragment>",
+      "    );",
+      "});"
+    ],
+    "description": "Create a React Functional Memoized Component",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "React Memoized Component with Props": {
+    "prefix": "#component:memo:with-props",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "export const ${1:ComponentName}: React.FC<${2:ComponentPropsType}> = React.memo(({${3:props1}}) => {",
+      "",
+      "",
+      "    return (",
+      "        <React.Fragment>",
+      "            $2",
+      "        </React.Fragment>",
+      "    );",
+      "});"
+    ],
+    "description": "Create a React Functional Memoized Component",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "React useState": {
+    "prefix": "#react:useState",
+    "body": [
+      "const [${1:state}, set${2:State}] = React.useState<${3:StateType}>(${4:initialStateValue})"
+    ],
+    "description": "Create a React state using useState hook",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "React useEffect": {
+    "prefix": "#react:useEffect",
+    "body": [
+      "React.useEffect(() => {",
+      "\t${1:onMount}",
+      "}, [${3:dependency1}]);"
+    ],
+    "description": "Create a React useEffect using useEffect hook",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "React useEffect with onUnmount action": {
+    "prefix": "#react:useEffec-with-onUnmount",
+    "body": [
+      "React.useEffect(() => {",
+      "\t${1:onMount}",
+      "",
+      "\treturn () => {",
+      "\t\t${2:onUnmount}",
+      "\t}",
+      "}, [${3:dependency1}]);"
+    ],
+    "description": "Create a React useEffect with onUnmount using useEffect hook",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "React useRef": {
+    "prefix": "#react:useRef",
+    "body": ["const ${1:refName} = React.useRef<${2:Type}>(${3:initialValue})"],
+    "description": "Create a ref using useRef hook",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  }
+}

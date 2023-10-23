@@ -1,0 +1,27 @@
+{
+  "React Custom Hook": {
+    "prefix": "#templates:base-tests",
+
+    "body": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "describe(\"${1:Test Describer}\", () => {",
+      "  beforeEach(() => {",
+      "    jest.clearAllMocks();",
+      "  });",
+      "",
+      "  afterEach(() => {",
+      "    jest.clearAllMocks();",
+      "  });",
+      "",
+      "  it.todo(\"should $2\");",
+      "}"
+    ],
+    "description": "Create a base test template",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "Typescript Const": {
+    "prefix": "!const",
+    "body": ["const ${1:name}: ${2:type} = ${3:value};"],
+    "description": "Create a typescript typed constant"
+  },
+  "Typescript Base Function": {
+    "prefix": "!function",
+    "body": [
+      "function ${1:functionName}(${2:param1}): ${3:ReturnType} {",
+      "\t$4",
+      "}"
+    ],
+    "description": "Create a typescript function",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "Typescript Async Function": {
+    "prefix": "!functionasync",
+    "body": [
+      "async function ${1:functionName}(${2:param1}): ${3:ReturnType} {",
+      "\t$4",
+      "}"
+    ],
+    "description": "Create a typescript async function",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "Typescript Arrow Function": {
+    "prefix": "!arrow",
+    "body": ["(${1:param1}) => {", "\t$2", "}"],
+    "description": "Create a typescript arrow function",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "Typescript Async Arrow Function": {
+    "prefix": "!arrowasync",
+    "body": ["async (${1:param1}) => {", "\t$2", "}"],
+    "description": "Create a typescript async arrow function",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "Typescript Factory": {
+    "prefix": "!factory",
+    "body": [
+      "const ${1:name}Factory = ({${2:param1}}: ${3:ParamsType}) => ({",
+      "\t${4:returnedValue1}",
+      "});"
+    ],
+    "description": "Create a typescript factory function",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  }
+}

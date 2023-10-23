@@ -1,0 +1,35 @@
+{
+  "React Custom Hook": {
+    "prefix": "#templates:component-hook",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "export const use${1:CustomHook} = () => {",
+      "  return {",
+      "    variables: {},",
+      "    states: {},",
+      "    actions: {},",
+      "    refs: {},",
+      "  };",
+      "};"
+    ],
+    "description": "Create a custom hook",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  },
+  "React Custom Types": {
+    "prefix": "#templates:component-types",
+    "body": [
+      "export interface ComponentProps {",
+      "\t",
+      "}",
+      "",
+      "export interface StyledContainer {",
+      "\t",
+      "}"
+    ],
+    "description": "Create a custom types",
+    "insertionMethod": "insert",
+    "language": "typescript"
+  }
+}
